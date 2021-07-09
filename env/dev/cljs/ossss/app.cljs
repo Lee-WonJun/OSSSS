@@ -1,4 +1,4 @@
-(ns ^:dev/once ossss.app
+(ns^:figwheel-no-load ossss.app
   (:require
     [ossss.core :as core]
     [cljs.spec.alpha :as s]

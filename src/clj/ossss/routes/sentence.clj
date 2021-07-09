@@ -1,4 +1,4 @@
-(ns ossss.routes.home
+(ns ossss.routes.sentence
   (:require
    [ossss.layout :as layout]
    [ossss.db.core :as db]

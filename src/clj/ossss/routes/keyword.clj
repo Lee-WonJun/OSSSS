@@ -1,4 +1,4 @@
-(ns ossss.routes.home
+(ns ossss.routes.keyword
   (:require
    [ossss.layout :as layout]
    [ossss.db.core :as db]
@@ -11,9 +11,11 @@
   {:status 200, :body "ok"})
 
 (defn keyword-routes []
-  ["keyword"
+  ["/api"
    {:middleware [middleware/wrap-csrf
                  middleware/wrap-formats]}
-   ["/:keyword" {:get {:handler handler}}]
-   ["/" {:get {:handler handler}
+   ["/keyword/:keyword" {:get {:handler handler}}]
+   ["/keyword" {:get {:handler handler
+               :name ::keyword-get}
          :post {:handler handler}}]])
+;; => #'ossss.routes.keyword/keyword-routes

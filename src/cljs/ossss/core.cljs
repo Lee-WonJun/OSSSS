@@ -81,7 +81,7 @@
 (defn fetch-docs! []
   (GET "/docs" {:handler #(swap! session assoc :docs %)}))
 
-(defn ^:dev/after-load mount-components []
+(defn mount-components []
   (rdom/render [#'navbar] (.getElementById js/document "navbar"))
   (rdom/render [#'page] (.getElementById js/document "app")))
 
