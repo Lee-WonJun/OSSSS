@@ -41,7 +41,7 @@
                  [ring/ring-defaults "0.3.2"]
                  [ring-oauth2 "0.1.5"]
                  [selmer "1.12.40"]
-                 [stuarth/clj-oauth2 "0.3.2"]]
+                 [clj-oauth2 "0.2.0"]]
 
   :min-lein-version "2.0.0"
   
